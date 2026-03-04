@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Services | OBTouhid Solutions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2559f4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101422",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+    <!-- Navigation -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">rocket_launch</span>
+                <span class="text-xl font-extrabold tracking-tight">OBTouhid Solutions</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="home.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="services.html">Services</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </nav>
+            <button onclick="window.location.href='contact.html'"
+                class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                Contact Us
+            </button>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-6">Expertise that drives <span
+                    class="text-primary">growth.</span></h1>
+            <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                We blend creativity with technical excellence to build digital experiences that convert and scale.
+            </p>
+        </div>
+    </section>
+    <!-- Detailed Services -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- UI/UX Design -->
+            <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                <div class="w-full h-48 rounded-lg mb-6 bg-cover bg-center"
+                    data-alt="Modern UI UX design interface elements"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFYYEDcs4twXrxqCyOsKZ0isj_UeMPton3Rtdzh6VUzbbQVAQy_ziRIjgE241FfLfEGZwwdifY6c6v2qKKEFf6OXkxp5PQqy0FZB7QPJqiQ_PgAaCLfuzzpXcy7X4mlOzwevLWqNd8LAPPssUGaf2ZdeU-p2SDsBdged1QGC71fKgM3br6LU_q2W0Sr-m0Z7j8OuF2kKUl4ttRfEtACiJqSxVcPUpOWvPOmpWSAink03QOxeaQYV7U46-yLkCZGXV38T3A7fOAriET')">
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">palette</span>
+                    <h3 class="text-xl font-bold">UI/UX Design</h3>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed">
+                    User-centric interfaces designed to provide seamless experiences across all devices. We focus on
+                    conversion and accessibility.
+                </p>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> User Research
+                    </li>
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> Interactive
+                        Prototyping</li>
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> Visual Design
+                        Systems</li>
+                </ul>
+            </div>
+            <!-- Web Development -->
+            <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                <div class="w-full h-48 rounded-lg mb-6 bg-cover bg-center" data-alt="Clean code on a computer screen"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGI7zA9ziYSYN04XZ8MAWYg_IbZIX0CP7QLImVt80W5MmC1BkGhFh32J2UlrTxoUl620Elowb6FCgaCM29X8iS2bxNSYSmv1RdVAVkzDag9uPi4MNt8QhLD0YsqNYdmtpDwDUgHw6hwEmukCCjCBI0v5ETGMtSHV3-2O0PVr6UiGxywDUPidDmVWmDwMnHHzry9RY_VdP3psbReEtY3kIBwPTyIEnMvuf_l1CX-ONDZtx293tHBeYx0wxJMf-i4Upi-a5roEMdoioQ')">
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">code</span>
+                    <h3 class="text-xl font-bold">Web Development</h3>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed">
+                    Scalable, high-performance web and mobile solutions built with the latest technologies like React,
+                    Next.js, and Node.
+                </p>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom Web Apps
+                    </li>
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> E-commerce
+                        Solutions</li>
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> CMS Integration
+                    </li>
+                </ul>
+            </div>
+            <!-- Instagram Content Enhancement -->
+            <div
+                class="bg-white dark:bg-slate-900 p-8 rounded-xl border border-slate-100 dark:border-slate-800 shadow-sm">
+                <div class="w-full h-48 rounded-lg mb-6 bg-cover bg-center"
+                    data-alt="Stunning Instagram feed layout on mobile"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn8k-G69mOFrP2K_1Z8W8z_H-A9z4k_L9Y7rW8F0D_G-H_Z-X-C-V-B-N-M-K-L-J-I-H-G-F-E-D-C-B-A')">
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">photo_camera</span>
+                    <h3 class="text-xl font-bold">Instagram Content Enhancement</h3>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 mb-6 text-sm leading-relaxed">
+                    Transform your feed into a powerful brand asset. We specialize in high-concept photography, video
+                    editing, and strategic storytelling tailored for the IG algorithm.
+                </p>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> Visual Branding
+                    </li>
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> Reels & Stories
+                        Production
+                    </li>
+                    <li class="flex items-center gap-2"><span
+                            class="material-symbols-outlined text-primary text-sm">check_circle</span> Aesthetic Grid
+                        Management
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Process Timeline -->
+    <section class="py-20 bg-slate-100 dark:bg-slate-950 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Our Working Process</h2>
+                <p class="text-slate-600 dark:text-slate-400">A systematic approach to bringing your vision to life.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-primary/20 -z-10"></div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="size-20 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6 shadow-xl shadow-primary/20">
+                        01</div>
+                    <h4 class="font-bold text-lg mb-2">Discovery</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">We analyze your goals, audience, and market
+                        landscape.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="size-20 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6 shadow-xl shadow-primary/20">
+                        02</div>
+                    <h4 class="font-bold text-lg mb-2">Strategy</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Defining the roadmap and technology stack for
+                        success.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="size-20 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6 shadow-xl shadow-primary/20">
+                        03</div>
+                    <h4 class="font-bold text-lg mb-2">Execution</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Iterative design and development with regular
+                        feedback.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="size-20 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6 shadow-xl shadow-primary/20">
+                        04</div>
+                    <h4 class="font-bold text-lg mb-2">Launch</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Final testing, deployment, and ongoing
+                        optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Tiers -->
+    <section class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black mb-4 tracking-tight">Simple, Transparent Pricing</h2>
+                <p class="text-slate-600 dark:text-slate-400">Choose the plan that fits your current business needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- SILVER STARTER -->
+                <div class="border border-slate-200 dark:border-slate-800 p-8 rounded-xl bg-white dark:bg-slate-900">
+                    <p class="text-sm font-bold text-primary mb-2">SILVER STARTER</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-black">$50</span>
+                        <span class="text-slate-500"> Ideal for: Local businesses & professionals</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Get your business on the map with a
+                        sleek, professional online presence.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> 4 Custom Static Pages
+                        </li>
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> Responsive Design</li>
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> Fast Loading Speed</li>
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> SEO Friendly</li>
+                    </ul>
+                    <button onclick="window.location.href='contact.html'"
+                        class="w-full py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Get
+                        Started</button>
+                </div>
+                <!-- GOLD GROWTH -->
+                <div
+                    class="border-2 border-primary p-8 rounded-xl bg-white dark:bg-slate-900 relative shadow-2xl shadow-primary/10">
+                    <div
+                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-widest">
+                        Most Popular</div>
+                    <p class="text-sm font-bold text-primary mb-2">GOLD GROWTH</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-black">$300</span>
+                        <span class="text-slate-500"> Ideal for: Content-driven sites</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">Go beyond the brochure. Manage your
+                        content in real-time with a powerful backend.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-sm font-semibold"><span
+                                class="material-symbols-outlined text-primary">done</span> Up to 10 Dynamic Pages
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-semibold"><span
+                                class="material-symbols-outlined text-primary">done</span> Database Integration</li>
+                        <li class="flex items-center gap-3 text-sm font-semibold"><span
+                                class="material-symbols-outlined text-primary">done</span> User Authentication</li>
+                        <li class="flex items-center gap-3 text-sm font-semibold"><span
+                                class="material-symbols-outlined text-primary">done</span> Basic Admin Panel</li>
+                    </ul>
+                    <button onclick="window.location.href='contact.html'"
+                        class="w-full py-3 bg-primary text-white font-bold rounded-lg hover:opacity-90 transition-all shadow-lg shadow-primary/20">Get
+                        Started</button>
+                </div>
+                <!-- PLATINUM ENTERPRISE -->
+                <div class="border border-slate-200 dark:border-slate-800 p-8 rounded-xl bg-white dark:bg-slate-900">
+                    <p class="text-sm font-bold text-primary mb-2">PLATINUM ENTERPRISE</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-black">$2000</span>
+                        <span class="text-slate-500"> Ideal for: Scaling businesses</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">A complete digital ecosystem to manage
+                        your entire business operations.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> Full E-commerce Functionality
+                        </li>
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> Inventory Management System
+                        </li>
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> Advanced Dashboard</li>
+                        <li class="flex items-center gap-3 text-sm"><span
+                                class="material-symbols-outlined text-primary">done</span> 20-30 Custom Dynamic Pages
+                        </li>
+                    </ul>
+                    <button onclick="window.location.href='contact.html'"
+                        class="w-full py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Contact
+                        Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Final CTA -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto rounded-3xl bg-primary p-12 text-center text-white relative overflow-hidden">
+            <!-- Background Decoration -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -ml-24 -mb-24"></div>
+            <div class="relative z-10">
+                <h2 class="text-4xl font-black mb-6">Ready to transform your <br /> digital presence?</h2>
+                <p class="text-white/80 text-lg mb-10 max-w-xl mx-auto">
+                    Let's discuss your project and see how our expertise can help you reach your goals faster.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <button
+                        class="bg-white text-primary px-10 py-4 rounded-xl font-black text-lg hover:bg-slate-100 transition-colors shadow-xl">Book
+                        a Free Consult</button>
+                    <button
+                        class="bg-primary border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">View
+                        Portfolio</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
+                <span class="text-lg font-extrabold">OBTouhid Solutions</span>
+            </div>
+            <div class="flex gap-8 text-sm font-medium text-slate-500">
+                <a class="hover:text-primary" href="#">Privacy Policy</a>
+                <a class="hover:text-primary" href="#">Terms of Service</a>
+                <a class="hover:text-primary" href="#">Cookies</a>
+            </div>
+            <p class="text-sm text-slate-500">© 2024 OBTouhid Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

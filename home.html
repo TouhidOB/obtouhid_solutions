@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2559f4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101422",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>OBTouhid Solutions | Professional Digital & Software Agency</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-primary p-1.5 rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-2xl">rocket_launch</span>
+                </div>
+                <h2 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">OBTouhid <span
+                        class="text-primary">Solutions</span></h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="home.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="services.html">Services</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button onclick="window.location.href='contact.html'"
+                    class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/25">
+                    Get in Touch
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden pt-16 pb-24 md:pt-32 md:pb-40">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="flex flex-col items-start gap-8 z-10">
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-base">verified</span>
+                        Award Winning Digital Agency
+                    </div>
+                    <h1
+                        class="text-5xl md:text-7xl font-extrabold leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                        We Build Digital Products <span class="text-primary">That Scale.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
+                        We partner with forward-thinking companies to craft exceptional digital experiences through
+                        strategy, design, and high-performance engineering.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                        <button
+                            class="bg-primary text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-primary/90 transition-all shadow-xl shadow-primary/30">
+                            Start Your Project
+                        </button>
+                        <button
+                            class="flex items-center justify-center gap-2 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-8 py-4 rounded-xl text-lg font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">
+                            View Portfolio
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+                        <img alt="Digital products team collaborating" class="w-full aspect-[4/3] object-cover"
+                            data-alt="Team of designers working on digital products"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVUcRFwSVlkF6jSYVD4lhkW8GCLatmkIGa0S5OmSqpbQsD8U6uIRxK8Y4k0KpNfBOd5Os63Hv0qEMO0wsZtUBGujNB-8N1sAwDFkas03qLMcwPtNKytJqhcfH7hmMnXtP8KNXv8LiIR044Iu4I5pmo_V1lo6nEDQxG9ezN-s5dfIbu2DFWpIemoGLctX88pgXkoWA_iD8q4zBZzhF-FfLRBKaicgSZdXA8BtAr92L2-czGJD1LavoR5HyBJf4aGcWB8YLgHt1Nman_" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Services -->
+        <section class="bg-white dark:bg-slate-900/50 py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                    <div class="max-w-2xl">
+                        <h2 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Core Expertise</h2>
+                        <h3 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white">Specialized
+                            services for digital excellence.</h3>
+                    </div>
+                    <a class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all" href="#">
+                        All Services <span class="material-symbols-outlined">east</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- UI/UX Design -->
+                    <div
+                        class="group p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-all duration-300">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">UI/UX Design</h4>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            Crafting intuitive, user-centric interfaces that solve complex problems and delight your
+                            customers at every touchpoint.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> User
+                                Research</li>
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Prototyping</li>
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Visual
+                                Identity</li>
+                        </ul>
+                    </div>
+                    <!-- Development -->
+                    <div
+                        class="group p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-all duration-300">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">terminal</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Full-Stack Development</h4>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            Building scalable, robust technical solutions using modern frameworks to ensure your product
+                            grows with your business.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Web
+                                Applications</li>
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Mobile
+                                Development</li>
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> API
+                                Architecture</li>
+                        </ul>
+                    </div>
+                    <!-- Instagram Content Enhancement -->
+                    <div
+                        class="group p-8 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-background-dark hover:border-primary/50 transition-all duration-300">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-3xl">photo_camera</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Instagram Content Enhancement</h4>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                            Elevate your brand's visual identity on Instagram with premium content creation, aesthetic
+                            grid planning, and engagement-driven storytelling.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Aesthetic
+                                Grid Design</li>
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> High-End
+                                Visuals</li>
+                            <li class="flex items-center gap-2 text-sm font-medium"><span
+                                    class="material-symbols-outlined text-primary text-lg">check_circle</span> Viral
+                                Reel Editing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Work -->
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Portfolio</h2>
+                    <h3 class="text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6">Featured Work
+                    </h3>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                        Explore some of our recent projects where we've helped companies redefine their digital presence
+                        and achieve measurable growth.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6">
+                            <img alt="Fintech App Dashboard"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Modern fintech application dashboard interface"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_YUFLm3Yda65Rr2-PuQch7KADCVs6e2AtM32OPKf6ZSUGbP5JSFa8yry-6bDqQy34GcuASoZsrnO4yj9gCB2tJFRCP4-abExMe8iaa0J6ubLrooaoCMhMiLoFAqMjob-YuEPYxvbhjbYFmngr-QhkSTNmth4EjC4zAkEgMolN2YUm0tEstwqs8BPUFtLw2In3UzVORVVRwhZs4F99vv6K8Hpjx7fKZ1ewehPGuQnQS00Iz0PTl50a1wStzDUNbENxv1z5vpp_kv5x" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                                <button class="bg-white text-slate-900 px-6 py-2 rounded-lg font-bold text-sm">View Case
+                                    Study</button>
+                            </div>
+                        </div>
+                        <p class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Fintech • UI/UX Design
+                        </p>
+                        <h4 class="text-2xl font-extrabold">Nova Capital Dashboard</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6">
+                            <img alt="E-commerce Platform"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Clean and minimal ecommerce store layout"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtWo8VLAc-aiFwFbEBQi0gumsjHe71Z2cAgZzMfnie-9ZnShUg6Mkji5cRs8v3KF53_V5XLPDjEdp_Ezw5hW8_Wl3Y5w7T8k7PyXcNGblC2zNqcqVfE1J1ly3u1lDgz0oA8alJfKzkGgCFqTk4yWWpq0ImTvdR2iUSOMTwwUHHbNBo-IDkpEGXZ8OvOvvnF6fSN4pdkB5t14f0leFru6a6jMJQ-3H7s6arIWO9oyw7BMJNCrWFw3aO_eNloQZxMq82sHZnisbBwfT3" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                                <button class="bg-white text-slate-900 px-6 py-2 rounded-lg font-bold text-sm">View Case
+                                    Study</button>
+                            </div>
+                        </div>
+                        <p class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Retail • Development
+                        </p>
+                        <h4 class="text-2xl font-extrabold">Luxe Apparel Platform</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6">
+                            <img alt="SaaS Marketing Website"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="SaaS landing page with abstract illustrations"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs2NS1dWXJqq7mtVvx4v3ae_ZMYQNx_myBGHC77meqmyVFH4eyxmV4ai8YolCiEAtbuKyE63ndwKuAkAGLlVc86eVdvC_ELnYo4Y6RNE0rlBPK6vTOFmyMKakAE58I7I_g1h-FaS4sK8FyQ82oDZf_SHmHy4h2Azk3KZoMucMiGsq80Fq8ucka6I7ftamDdhvl8V-a5AbRG2OUb9l9EFmk5dhHfrzX1DncA_ZV7tRrvRdXuZHcI2pIRDw4TWeZj9YcSIG0s6Xatsry" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                                <button class="bg-white text-slate-900 px-6 py-2 rounded-lg font-bold text-sm">View Case
+                                    Study</button>
+                            </div>
+                        </div>
+                        <p class="text-primary font-bold text-xs uppercase tracking-widest mb-2">SaaS • Growth</p>
+                        <h4 class="text-2xl font-extrabold">Workflow Automation Site</h4>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-2xl aspect-[16/10] mb-6">
+                            <img alt="Healthcare Mobile App"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Healthcare mobile application design screens"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk7HXsf3LZo1Mr4rAKAlGTtLqKeBw4oPZeJOGbRSXuba3rso1rZiBmYJoixUAmw5MJDUHS9qay6LQ1hjEfTx902uZcSY_rWHvrNdFS5ErTcXosTmXdMAiEyEaANojwD7jqCn-tO_VIYHwDBop2rWMsbE70ax8aDZctb5kzIM0A4jctyUtUcUxnyCp-OZO94t_5h3GGpKBDgPuLkjoOOVzwDKNQAXCLBM_OwiWviDhaQGmd2nA258BXo4ftQXIdRpZKfZXmM2qFuRa5" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                                <button class="bg-white text-slate-900 px-6 py-2 rounded-lg font-bold text-sm">View Case
+                                    Study</button>
+                            </div>
+                        </div>
+                        <p class="text-primary font-bold text-xs uppercase tracking-widest mb-2">Health • Mobile App</p>
+                        <h4 class="text-2xl font-extrabold">VitalCare Experience</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-24 px-6">
+            <div
+                class="max-w-5xl mx-auto rounded-3xl bg-primary px-8 py-16 md:p-20 text-center text-white relative overflow-hidden shadow-2xl shadow-primary/40">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-8 relative z-10">Ready to build something amazing?
+                </h2>
+                <p class="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto relative z-10">
+                    Let's discuss how our expert team can help you scale your digital presence and achieve your goals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+                    <button
+                        class="bg-white text-primary px-10 py-4 rounded-xl text-lg font-extrabold hover:bg-slate-50 transition-all">
+                        Get in Touch
+                    </button>
+                    <button
+                        class="bg-primary/20 border border-white/30 backdrop-blur-sm px-10 py-4 rounded-xl text-lg font-extrabold hover:bg-primary/30 transition-all">
+                        View Pricing
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-background-dark pt-20 pb-10 border-t border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-primary p-1.5 rounded-lg">
+                            <span class="material-symbols-outlined text-white text-xl">rocket_launch</span>
+                        </div>
+                        <h2 class="text-xl font-extrabold tracking-tight">OBTouhid Solutions</h2>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                        A full-service digital agency specialized in building products that solve real problems.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">share</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Company</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Our Team</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Services</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">UI/UX Design</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Product Strategy</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Mobile Development</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Web Apps</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contact</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            ob.touhid@gmail.com
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            82, Bakergonj - 8280,<br />Barisal, Bangladesh
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-10 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+                <p>© 2024 OBTouhid Solutions. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
