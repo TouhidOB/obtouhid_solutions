@@ -44,15 +44,17 @@
                 <span class="text-xl font-extrabold tracking-tight">OBTouhid Solutions</span>
             </div>
             <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-semibold hover:text-primary transition-colors" href="home.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="../home.html">Home</a>
                 <a class="text-sm font-semibold hover:text-primary transition-colors" href="services.html">Services</a>
                 <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About</a>
                 <a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
             </nav>
-            <button onclick="window.location.href='contact.html'"
-                class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
-                Contact Us
-            </button>
+            <div class="flex items-center gap-4">
+                <button onclick="window.location.href='contact.html'"
+                    class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/25">
+                    Contact Us
+                </button>
+            </div>
         </div>
     </header>
     <!-- Hero Section -->
@@ -298,7 +300,7 @@
                     Let's discuss your project and see how our expertise can help you reach your goals faster.
                 </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <button
+                    <button onclick="window.location.href='contact.html'"
                         class="bg-white text-primary px-10 py-4 rounded-xl font-black text-lg hover:bg-slate-100 transition-colors shadow-xl">Book
                         a Free Consult</button>
                     <button
@@ -309,18 +311,76 @@
         </div>
     </section>
     <!-- Footer -->
-    <footer class="py-12 px-6 border-t border-slate-200 dark:border-slate-800">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-2xl">rocket_launch</span>
-                <span class="text-lg font-extrabold">OBTouhid Solutions</span>
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-background-dark pt-20 pb-10 border-t border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-primary p-1.5 rounded-lg">
+                            <span class="material-symbols-outlined text-white text-xl">rocket_launch</span>
+                        </div>
+                        <h2 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">OBTouhid
+                            Solutions</h2>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                        A full-service digital agency specialized in building products that solve real problems.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">public</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">share</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined text-xl">alternate_email</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Company</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Our Services</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Explore</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Instagram
+                                Enhancement</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">UI/UX Design</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html">Web Development</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6">Contact</h5>
+                    <ul class="space-y-4 text-slate-500 dark:text-slate-400">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">mail</span>
+                            ob.touhid@gmail.com
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary">location_on</span>
+                            82, Bakergonj - 8280,<br />Barisal, Bangladesh
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex gap-8 text-sm font-medium text-slate-500">
-                <a class="hover:text-primary" href="#">Privacy Policy</a>
-                <a class="hover:text-primary" href="#">Terms of Service</a>
-                <a class="hover:text-primary" href="#">Cookies</a>
+            <div
+                class="pt-10 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+                <p>© 2024 OBTouhid Solutions. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+                    <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+                </div>
             </div>
-            <p class="text-sm text-slate-500">© 2024 OBTouhid Solutions. All rights reserved.</p>
         </div>
     </footer>
 </body>
