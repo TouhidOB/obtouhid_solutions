@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2559f4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101422",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <title>Showcase | OBTouhid Solutions</title>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+    <!-- Navigation Bar -->
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="bg-primary p-1.5 rounded-lg flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-2xl">rocket_launch</span>
+                </div>
+                <h2 class="text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">OBTouhid <span
+                        class="text-primary">Solutions</span></h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="pages/services.html">Services</a>
+                <a class="text-sm font-semibold text-primary transition-colors" href="showcase.html">Demos</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="pages/about.html">About</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors"
+                    href="pages/contact.html">Contact</a>
+            </nav>
+            <div class="flex items-center md:hidden">
+                <button id="mobile-menu-button" class="text-slate-900 dark:text-white focus:outline-none">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden border-t border-primary/10 bg-background-light dark:bg-background-dark">
+            <div class="flex flex-col p-6 gap-4">
+                <a class="text-base font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-base font-semibold hover:text-primary transition-colors"
+                    href="pages/services.html">Services</a>
+                <a class="text-base font-semibold text-primary transition-colors" href="showcase.html">Demos</a>
+                <a class="text-base font-semibold hover:text-primary transition-colors"
+                    href="pages/about.html">About</a>
+                <a class="text-base font-semibold hover:text-primary transition-colors"
+                    href="pages/contact.html">Contact</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById('mobile-menu-button').addEventListener('click', function () {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+            });
+        </script>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-20 pb-16 px-6">
+            <div class="max-w-7xl mx-auto text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="material-symbols-outlined text-base">visibility</span>
+                    Solution Showcase
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                    Explore Our <span class="text-primary">Industry-Specific</span> Demos.
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    We've designed and built high-performance templates and live demos tailored for various businesses.
+                    Explore how we can transform your digital presence.
+                </p>
+            </div>
+        </section>
+
+        <!-- Category Grid -->
+        <section class="pb-32 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Salon & Parlor -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-500">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="pages/previews/salon.png" alt="Salon and Parlor Demo"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-4 left-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-primary text-white text-[10px] font-bold uppercase tracking-wider">Top
+                                    Rated</span>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-extrabold mb-3">Salon & Parlor</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                A premium aesthetic for luxury spa, salons, and beauty parlors. Includes specialist
+                                booking, service menus, and portfolio.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="https://touhidob.github.io/salon_and_parlor_demo/" target="_blank"
+                                    class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-bold hover:bg-primary/90 transition-all group/btn">
+                                    View Demo
+                                    <span
+                                        class="material-symbols-outlined text-xl group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurants -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-500">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="pages/previews/restaurant.png" alt="Restaurant Demo"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-4 left-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-orange-500 text-white text-[10px] font-bold uppercase tracking-wider">Coming
+                                    Soon</span>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-extrabold mb-3">Restaurants</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                Elegant dining experiences with online reservations, digital menus, and gallery
+                                showcasing culinary excellence.
+                            </p>
+                            <div class="mt-auto">
+                                <button
+                                    class="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 px-6 py-3 rounded-xl font-bold cursor-not-allowed">
+                                    In Progress
+                                    <span class="material-symbols-outlined text-xl">lock</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hotel & Motel -->
+                    <div
+                        class="group flex flex-col bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-500">
+                        <div class="relative aspect-video overflow-hidden">
+                            <img src="pages/previews/hotel.png" alt="Hotel and Motel Demo"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-4 left-6">
+                                <span
+                                    class="px-3 py-1 rounded-full bg-teal-500 text-white text-[10px] font-bold uppercase tracking-wider">New
+                                    Category</span>
+                            </div>
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-extrabold mb-3">Hotel & Motel</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                                Luxury hospitality websites featuring room booking, amenity guides, and seamless guest
+                                experiences.
+                            </p>
+                            <div class="mt-auto">
+                                <button
+                                    class="inline-flex items-center gap-2 bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500 px-6 py-3 rounded-xl font-bold cursor-not-allowed">
+                                    In Progress
+                                    <span class="material-symbols-outlined text-xl">lock</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Future Categories Placeholder -->
+                <div
+                    class="mt-16 p-12 rounded-3xl border-2 border-dashed border-slate-200 dark:border-slate-800 text-center">
+                    <div
+                        class="size-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary">
+                        <span class="material-symbols-outlined text-3xl">add_circle</span>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">More Categories Coming Soon</h4>
+                    <p class="text-slate-500 dark:text-slate-400 max-w-md mx-auto">
+                        We are constantly expanding our portfolio. E-commerce, Real Estate, and Gym categories are
+                        currently under development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic CTA -->
+        <section class="py-24 px-6 bg-slate-50 dark:bg-slate-900/30">
+            <div
+                class="max-w-5xl mx-auto rounded-3xl bg-primary px-8 py-16 text-center text-white relative overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                <h2 class="text-3xl font-extrabold mb-6">Need a custom niche solution?</h2>
+                <p class="text-lg text-white/80 mb-10 max-w-xl mx-auto">
+                    If you don't see your industry here, contact us. We specialize in building custom digital
+                    experiences for any business model.
+                </p>
+                <a href="pages/contact.html"
+                    class="inline-block bg-white text-primary px-10 py-4 rounded-xl text-lg font-extrabold hover:bg-slate-50 transition-all">
+                    Request Custom Demo
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Simplified) -->
+    <footer class="bg-white dark:bg-background-dark py-12 border-t border-slate-100 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="bg-primary p-1 rounded-lg">
+                    <span class="material-symbols-outlined text-white text-base">rocket_launch</span>
+                </div>
+                <h2 class="text-lg font-extrabold tracking-tight">OBTouhid Solutions</h2>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400">© 2024 OBTouhid Solutions. All rights reserved.</p>
+            <div class="flex gap-6 text-sm">
+                <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                <a href="pages/services.html" class="hover:text-primary transition-colors">Services</a>
+                <a href="pages/contact.html" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
